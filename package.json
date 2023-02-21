@@ -1,0 +1,37 @@
+{
+  "name": "react-header-responsive",
+  "version": "1.0.0",
+  "description": "Responsive header for React apps",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.12.10",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "babel-loader": "^8.2.2",
+    "react": "^18.2.0",
+    "rollup": "^2.38.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liubov-js/react-header-responsive.git"
+  },
+  "author": "Liubov Krivtsova",
+  "license": "MIT",
+  "keywords": ["react", "header"],
+  "bugs": {
+    "url": "https://github.com/liubov-js/react-header-responsive/issues"
+  },
+  "homepage": "https://github.com/liubov-js/react-header-responsive#readme"
+}
