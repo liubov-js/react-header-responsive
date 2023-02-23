@@ -17,7 +17,7 @@ export default (props) => {
             )
           } else {
             return (
-              <li>
+              <li key={el.id || i}>
                 <span className='rhr-caret'>
                   {el.name}
                   <i className="rhr-arrow"/>
