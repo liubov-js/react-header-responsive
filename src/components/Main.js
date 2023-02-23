@@ -11,8 +11,8 @@ export default (props) => {
         {props.data.data.map((el, i) => {
           if (!el.children) {
             return (
-              <li className="rhr-main-menu" key={el.id || i} onClick={() => handleMenuItemClick(el)}>
-                <a className="rhr-menu-item" href={el.link}>{el.name}</a>
+              <li key={el.id || i} onClick={() => handleMenuItemClick(el)}>
+                <a href={el.link}>{el.name}</a>
               </li>
             )
           } else {
@@ -26,8 +26,8 @@ export default (props) => {
                 <ul>
                   {el.children.map((ch, i) => {
                     return (
-                      <li className="rhr-li-child" key={ch.id || i} onClick={() => handleMenuItemClick(ch)}>
-                        <a className="rhr-menu-item" href={ch.link}>{ch.name}</a>
+                      <li key={ch.id || i} onClick={() => handleMenuItemClick(ch)}>
+                        <a href={ch.link}>{ch.name}</a>
                       </li>
                     )
                   })}
@@ -36,6 +36,7 @@ export default (props) => {
             )
           }
         })}
+        <li className="rhr-main-access">{props.data.access}</li>
       </ul>
     </nav>
   );

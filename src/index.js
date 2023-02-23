@@ -14,9 +14,6 @@ export default (data, home, access) => {
 
   return (
     <header className="rhr-header">
-      <div className="rhr-mobile-menu" onClick={toggleMenu}>
-        <MobileMenuToggle isToggled={isToggled} />
-      </div>
       <div className="rhr-home">
         <Home home={home} />
       </div>
@@ -27,6 +24,9 @@ export default (data, home, access) => {
       </div>
       <div className="rhr-access-container">
         <Access component={access} />
+      </div>
+      <div className="rhr-mobile-menu" onClick={toggleMenu}>
+        <MobileMenuToggle isToggled={isToggled} />
       </div>
     </header>
   )

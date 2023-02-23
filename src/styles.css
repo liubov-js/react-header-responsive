@@ -12,17 +12,18 @@
   max-width: 250px;
   width: 250px;
   height: 100%;
-  box-shadow: 0 0 10px rgba(113, 53, 161, 0.7);
+  /*box-shadow: 0 0 10px rgba(113, 53, 161, 0.7);*/
   margin: -50px 0 0 -50px;
   padding: 125px 50px 50px;
   background-color: rgb(52, 1, 89);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
+  right: 0;
   /*transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);*/
 }
 
 .rhr-menu-container-mobile-transform {
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
 }
 
 .rhr-logo {
@@ -141,7 +142,15 @@ nav ul li ul li {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.rhr-access-container {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+  .rhr-access-container {
+    display: block;
+  }
+
   nav {
     max-width: 100%;
   }
@@ -176,6 +185,10 @@ nav ul li ul li {
   }
 
   .rhr-mobile-menu {
+    display: none;
+  }
+
+  .rhr-main-access {
     display: none;
   }
 }
