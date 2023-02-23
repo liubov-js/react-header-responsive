@@ -1,0 +1,106 @@
+.rhr-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(57, 25, 82);
+  height: 60px;
+  width: 100%;
+  font-family: "Roboto Light", serif;
+}
+
+.rhr-menu-container {
+  display: none;
+}
+
+.rhr-logo {
+  min-width: 70px;
+  max-height: 70px;
+}
+
+.rhr-access {
+  min-width: 170px;
+  max-height: 70px;
+}
+
+nav {
+  height: 100%;
+  margin-left: 15px;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  float: left;
+  padding:0;
+  position: relative;
+}
+
+nav ul li {
+  margin: auto;
+  display:inline-block;
+}
+
+nav a:hover, nav span:hover {
+  background-color: rgba(113, 53, 161, 0.7);
+}
+
+nav a:link,
+nav a:visited,
+nav span {
+  color: rgb(239, 228, 247);
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: left;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+nav ul li:hover > ul {
+  display:inherit;
+}
+
+nav ul li ul li {
+  min-width: 100px;
+  float:none;
+  display:list-item;
+  position: relative;
+  background-color: rgb(52, 1, 89);
+}
+
+.rhr-arrow {
+  margin-left: 6px;
+  margin-bottom: 3px;
+  border: solid rgb(239, 228, 247);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.rhr-caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rhr-nested {
+  display: none;
+}
+
+.rhr-active {
+  display: list-item;
+}
+
+@media screen and (min-width: 40em) {
+  .rhr-menu-container {
+    display: block;
+    width: 100%;
+  }
+}
