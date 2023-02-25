@@ -8,7 +8,7 @@
 }
 
 .rhr-menu-container {
-  position: absolute;
+  position: fixed;
   max-width: 250px;
   width: 250px;
   height: 100%;
@@ -36,110 +36,9 @@
   height: 100%;
 }
 
-nav {
-  height: 100%;
-  margin-left: 15px;
-  max-width: 200px;
-}
-
-nav ul {
-  height: 20px;
-  list-style: none;
-  margin: 0;
-  display: block;
-  float: left;
-  padding:0;
-  position: relative;
-}
-
-nav a:hover, nav span:hover {
-  background-color: rgba(113, 53, 161, 0.7);
-}
-
-nav a:link,
-nav a:visited,
-nav span {
-  color: rgb(239, 228, 247);
-  text-decoration: none;
-  display: block;
-  padding: 0 15px;
-  font-size: 20px;
-  line-height: 60px;
-  text-align: left;
-}
-
-nav ul ul {
-  display: none;
-  position: inherit;
-  top: 100%;
-  margin-left: 35px;
-}
-
-nav ul li:hover > ul {
-  display:inherit;
-}
-
-nav ul li ul li {
-  min-width: 170px;
-  float:none;
-  display:list-item;
-  position: relative;
-  background-color: rgb(52, 1, 89);
-}
-
-.rhr-arrow {
-  margin-left: 6px;
-  margin-bottom: 3px;
-  border: solid rgb(239, 228, 247);
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-}
-
-.rhr-caret {
-  cursor: pointer;
-  user-select: none;
-}
-
-.rhr-nested {
-  display: none;
-}
-
-.rhr-active {
-  display: list-item;
-}
-
 .rhr-mobile-menu {
   z-index: 1;
   margin: 10px 6px;
-}
-
-.rhr-menu-toggle {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.rhr-bar-1, .rhr-bar-2, .rhr-bar-3 {
-  width: 35px;
-  height: 5px;
-  background-color: rgb(239, 228, 247);
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.rhr-toggled .rhr-bar-1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.rhr-toggled .rhr-bar-2 {
-  opacity: 0;
-}
-
-.rhr-toggled .rhr-bar-3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .rhr-access-container {
@@ -149,25 +48,6 @@ nav ul li ul li {
 @media only screen and (min-width: 768px) {
   .rhr-access-container {
     display: block;
-  }
-
-  nav {
-    max-width: 100%;
-  }
-
-  nav ul li {
-    margin: auto;
-    display:inline-block;
-  }
-
-  nav ul {
-    height: 100%;
-    display: flex;
-  }
-
-  nav ul ul {
-    margin-left: 0;
-    position: inherit;
   }
 
   .rhr-menu-container {
@@ -185,10 +65,6 @@ nav ul li ul li {
   }
 
   .rhr-mobile-menu {
-    display: none;
-  }
-
-  .rhr-main-access {
     display: none;
   }
 }

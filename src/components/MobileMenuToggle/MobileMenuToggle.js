@@ -1,6 +1,7 @@
 import React from "react";
+import './MobileMenuToggle.css';
 
-export default (props) => {
+export const MobileMenuToggle = (props) => {
   return (
     <div className={`rhr-menu-toggle ${props.isToggled ? 'rhr-toggled' : ''}`}>
       <div className="rhr-bar-1"/>

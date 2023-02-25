@@ -1,8 +1,10 @@
 import React from "react";
+import './Main.css';
 
-export default (props) => {
+export const Main = (props) => {
+  console.log('props', props);
   const handleMenuItemClick = (el) => {
-    console.log('element', el)
+    console.log('element', el);
   }
 
   return (
@@ -14,7 +16,7 @@ export default (props) => {
               <li key={el.id || i} onClick={() => handleMenuItemClick(el)}>
                 <a href={el.link}>{el.name}</a>
               </li>
-            )
+            );
           } else {
             return (
               <li key={el.id || i}>
@@ -33,7 +35,7 @@ export default (props) => {
                   })}
                 </ul>
               </li>
-            )
+            );
           }
         })}
         <li className="rhr-main-access">{props.data.access}</li>

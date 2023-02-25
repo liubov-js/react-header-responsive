@@ -1,0 +1,26 @@
+.rhr-menu-toggle {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rhr-bar-1, .rhr-bar-2, .rhr-bar-3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(239, 228, 247);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.rhr-toggled .rhr-bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.rhr-toggled .rhr-bar-2 {
+  opacity: 0;
+}
+
+.rhr-toggled .rhr-bar-3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

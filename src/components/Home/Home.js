@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+export const Home = (props) => {
   return (
     <div className="rhr-logo">
       {props.home}

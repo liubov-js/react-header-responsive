@@ -1,6 +1,6 @@
 import React from "react";
 
-export default (props) => {
+export const Access = (props) => {
   return (
     <div className="rhr-access">
       {props.access}

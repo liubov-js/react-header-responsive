@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import Main from "./components/Main";
-import Home from "./components/Home";
-import Access from "./components/Access";
-import MobileMenuToggle from "./components/MobileMenuToggle";
+import {Main} from "./components/Main/Main";
+import {Home} from "./components/Home/Home";
+import {Access} from "./components/Access/Access";
+import {MobileMenuToggle} from "./components/MobileMenuToggle/MobileMenuToggle";
 import './styles.css';
 
-export default (data, home, access) => {
+const Header = ({data, home, access}) => {
   const [isToggled, setIsToggled] = useState(false);
 
   const toggleMenu = () => {
@@ -31,3 +31,5 @@ export default (data, home, access) => {
     </header>
   )
 }
+
+export default Header;
