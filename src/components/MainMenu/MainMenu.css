@@ -39,16 +39,19 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-  display: inline-table;
-  width: calc(100% - 35px);
+  position: absolute;
+  top: 60px;
+  width: max-content;
+  display: contents;
 }
 
 nav ul li ul li {
   min-width: 170px;
-  float:none;
-  display:list-item;
+  float: none;
+  display: list-item;
   position: relative;
   background-color: rgb(52, 1, 89);
+  padding-left: 24px;
 }
 
 .rhr-arrow {
@@ -73,11 +76,12 @@ nav ul li ul li {
   }
 
   nav a:hover, nav span:hover {
-    background-color: rgba(113, 53, 161, 0.7);
+    color: orange;
   }
 
-  nav a:hover, nav span:hover {
-    background-color: rgba(113, 53, 161, 0.7);
+  nav span:hover > i {
+    border: solid orange;
+    border-width: 0 1px 1px 0;
   }
 
   nav a:link,
@@ -87,17 +91,13 @@ nav ul li ul li {
     line-height: 60px;
   }
 
-  /*nav {*/
-  /*  max-width: 100%;*/
-  /*}*/
-  nav ul li:hover > ul {
-    /*display: inherit;*/
-    width: 100%;
-  }
-
   nav ul li {
     margin: auto;
     display: inline-block;
+  }
+
+  nav ul li ul li {
+    padding-left: 0;
   }
 
   nav ul {
@@ -112,5 +112,9 @@ nav ul li ul li {
 
   .rhr-main-access {
     display: none;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
   }
 }

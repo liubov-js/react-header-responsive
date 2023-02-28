@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Main} from "./components/Main/Main";
+import {MainMenu} from "./components/MainMenu/MainMenu";
 import {Home} from "./components/Home/Home";
 import {Access} from "./components/Access/Access";
 import {MobileMenuToggle} from "./components/MobileMenuToggle/MobileMenuToggle";
@@ -20,7 +20,7 @@ const Header = ({pages, home, access}) => {
       <div
         className={`rhr-menu-container ${!isToggled ? 'rhr-menu-container-mobile-transform' : ''}`}
       >
-        <Main pages={pages} access={access} />
+        <MainMenu pages={pages} access={access} />
       </div>
       <div className="rhr-access-container">
         <Access access={access} />

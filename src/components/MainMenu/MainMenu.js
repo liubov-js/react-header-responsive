@@ -1,18 +1,15 @@
 import React from "react";
-import './Main.css';
+import {SubMenu} from "../SubMenu/SubMenu";
+import './MainMenu.css';
 
-export const Main = ({pages, access}) => {
-  const handleMenuItemClick = (el) => {
-    console.log('element', el);
-  }
-
+export const MainMenu = ({pages, access}) => {
   return (
     <nav>
       <ul className='rhr-menu-box'>
         {pages.map((el, i) => {
           if (!el.children) {
             return (
-              <li key={el.id || i} onClick={() => handleMenuItemClick(el)}>
+              <li key={el.id || i}>
                 <a href={el.link}>{el.name}</a>
               </li>
             );
@@ -23,15 +20,7 @@ export const Main = ({pages, access}) => {
                   {el.name}
                   <i className="rhr-arrow"/>
                 </span>
-                <ul>
-                  {el.children.map((ch, i) => {
-                    return (
-                      <li key={ch.id || i} onClick={() => handleMenuItemClick(ch)}>
-                        <a href={ch.link}>{ch.name}</a>
-                      </li>
-                    )
-                  })}
-                </ul>
+                <SubMenu pages={el.children}/>
               </li>
             );
           }
