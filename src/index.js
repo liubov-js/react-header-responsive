@@ -20,7 +20,7 @@ const Header = ({data, home, access}) => {
       <div
         className={`rhr-menu-container ${!isToggled ? 'rhr-menu-container-mobile-transform' : ''}`}
       >
-        <Main data={data} />
+        <Main data={data} access={<Access component={access} />} />
       </div>
       <div className="rhr-access-container">
         <Access component={access} />

@@ -1,8 +1,7 @@
 import React from "react";
 import './Main.css';
 
-export const Main = (props) => {
-  console.log('props', props);
+export const Main = ({data, access}) => {
   const handleMenuItemClick = (el) => {
     console.log('element', el);
   }
@@ -10,7 +9,7 @@ export const Main = (props) => {
   return (
     <nav>
       <ul className='rhr-menu-box'>
-        {props.data.data.map((el, i) => {
+        {data.map((el, i) => {
           if (!el.children) {
             return (
               <li key={el.id || i} onClick={() => handleMenuItemClick(el)}>
@@ -38,7 +37,7 @@ export const Main = (props) => {
             );
           }
         })}
-        <li className="rhr-main-access">{props.data.access}</li>
+        <li className="rhr-main-access">{access}</li>
       </ul>
     </nav>
   );
