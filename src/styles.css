@@ -9,12 +9,9 @@
 
 .rhr-menu-container {
   position: fixed;
-  max-width: 250px;
-  width: 250px;
+  max-width: 350px;
+  width: 350px;
   height: 100%;
-  /*box-shadow: 0 0 10px rgba(113, 53, 161, 0.7);*/
-  margin: -50px 0 0 -50px;
-  padding: 125px 50px 50px;
   background-color: rgb(52, 1, 89);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
@@ -26,11 +23,6 @@
   transform: translate(100%, 0);
 }
 
-.rhr-logo {
-  min-width: 70px;
-  max-height: 70px;
-}
-
 .rhr-access {
   min-width: 170px;
   height: 100%;
@@ -38,7 +30,7 @@
 
 .rhr-mobile-menu {
   z-index: 1;
-  margin: 10px 6px;
+  margin: 13px;
 }
 
 .rhr-access-container {

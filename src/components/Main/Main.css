@@ -1,7 +1,7 @@
 nav {
   height: 100%;
-  margin-left: 15px;
-  max-width: 200px;
+  margin: 60px 40px 0;
+  max-width: 100%;
 }
 
 nav ul {
@@ -12,10 +12,11 @@ nav ul {
   float: left;
   padding:0;
   position: relative;
+  width: 100%;
 }
 
 nav a:hover, nav span:hover {
-  background-color: rgba(113, 53, 161, 0.7);
+  background-color: inherit;
 }
 
 nav a:link,
@@ -24,21 +25,22 @@ nav span {
   color: rgb(239, 228, 247);
   text-decoration: none;
   display: block;
-  padding: 0 15px;
   font-size: 20px;
-  line-height: 60px;
+  line-height: normal;
   text-align: left;
+  padding: 13px 0;
 }
 
 nav ul ul {
   display: none;
   position: inherit;
   top: 100%;
-  margin-left: 35px;
+  margin-left: 24px;
 }
 
 nav ul li:hover > ul {
-  display:inherit;
+  display: inline-table;
+  width: calc(100% - 35px);
 }
 
 nav ul li ul li {
@@ -64,9 +66,33 @@ nav ul li ul li {
   user-select: none;
 }
 
+/* DESKTOP */
 @media only screen and (min-width: 768px) {
   nav {
-    max-width: 100%;
+    margin: 0 0 0 15px;
+  }
+
+  nav a:hover, nav span:hover {
+    background-color: rgba(113, 53, 161, 0.7);
+  }
+
+  nav a:hover, nav span:hover {
+    background-color: rgba(113, 53, 161, 0.7);
+  }
+
+  nav a:link,
+  nav a:visited,
+  nav span {
+    padding: 0 15px;
+    line-height: 60px;
+  }
+
+  /*nav {*/
+  /*  max-width: 100%;*/
+  /*}*/
+  nav ul li:hover > ul {
+    /*display: inherit;*/
+    width: 100%;
   }
 
   nav ul li {
@@ -76,7 +102,7 @@ nav ul li ul li {
 
   nav ul {
     height: 100%;
-    display: flex;
+    display: -webkit-box; /*flex;*/
   }
 
   nav ul ul {

@@ -1,7 +1,7 @@
 import React from "react";
 import './Main.css';
 
-export const Main = ({data, access}) => {
+export const Main = ({pages, access}) => {
   const handleMenuItemClick = (el) => {
     console.log('element', el);
   }
@@ -9,7 +9,7 @@ export const Main = ({data, access}) => {
   return (
     <nav>
       <ul className='rhr-menu-box'>
-        {data.map((el, i) => {
+        {pages.map((el, i) => {
           if (!el.children) {
             return (
               <li key={el.id || i} onClick={() => handleMenuItemClick(el)}>
@@ -23,7 +23,6 @@ export const Main = ({data, access}) => {
                   {el.name}
                   <i className="rhr-arrow"/>
                 </span>
-
                 <ul>
                   {el.children.map((ch, i) => {
                     return (
@@ -37,7 +36,7 @@ export const Main = ({data, access}) => {
             );
           }
         })}
-        <li className="rhr-main-access">{access}</li>
+        <div className="rhr-main-access">{access}</div>
       </ul>
     </nav>
   );
