@@ -3,6 +3,8 @@ import {SubMenu} from "../SubMenu/SubMenu";
 import './MainMenu.css';
 
 export const MainMenu = ({pages, access}) => {
+  const path = window.location.pathname;
+  
   return (
     <nav>
       <ul className='rhr-menu-box'>
@@ -10,7 +12,9 @@ export const MainMenu = ({pages, access}) => {
           if (!el.children) {
             return (
               <li key={el.id || i}>
-                <a href={el.link}>{el.name}</a>
+                <a href={el.link} className={`${el.link === path ? 'rhr-active' : ''}`}>
+                  {el.name}
+                </a>
               </li>
             );
           } else {
