@@ -73,6 +73,11 @@ nav ul li ul li {
   color: orange !important;
 }
 
+.rhr-submenu-link {
+  padding: 0 !important;
+  line-height: 40px !important;
+}
+
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
   nav {
@@ -101,6 +106,7 @@ nav ul li ul li {
   }
 
   nav ul li ul li {
+    background-color: rgb(57, 25, 82);
     padding-left: 0;
   }
 
@@ -120,5 +126,10 @@ nav ul li ul li {
 
   nav ul li:hover > ul {
     display: block;
+  }
+
+  .rhr-submenu-link {
+    padding: 0 15px !important;
+    line-height: 40px !important;
   }
 }

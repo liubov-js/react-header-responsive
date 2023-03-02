@@ -5,7 +5,7 @@ import {Access} from "./components/Access/Access";
 import {MobileMenuToggle} from "./components/MobileMenuToggle/MobileMenuToggle";
 import './styles.css';
 
-const Header = ({pages, home, access}) => {
+const Header = ({pages, home, access, overlap}) => {
   const [isToggled, setIsToggled] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +13,7 @@ const Header = ({pages, home, access}) => {
   }
 
   return (
-    <header className="rhr-header">
+    <header className={`rhr-header ${overlap ? 'rhr-overlap' : ''}`}>
       <div className="rhr-home">
         <Home home={home} />
       </div>

@@ -4,16 +4,16 @@
 }
 
 .rhr-bar-1, .rhr-bar-2, .rhr-bar-3 {
-  width: 35px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background-color: rgb(239, 228, 247);
   margin: 6px 0;
   transition: 0.4s;
 }
 
 .rhr-toggled .rhr-bar-1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+  transform: rotate(-45deg) translate(-6px, 4px);
 }
 
 .rhr-toggled .rhr-bar-2 {
@@ -21,6 +21,6 @@
 }
 
 .rhr-toggled .rhr-bar-3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+  transform: rotate(45deg) translate(-9px, -7px);
 }

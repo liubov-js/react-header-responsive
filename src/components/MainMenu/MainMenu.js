@@ -4,7 +4,7 @@ import './MainMenu.css';
 
 export const MainMenu = ({pages, access}) => {
   const path = window.location.pathname;
-  
+
   return (
     <nav>
       <ul className='rhr-menu-box'>

@@ -8,7 +8,7 @@ export const SubMenu = ({pages}) => {
       {pages.map((ch, i) => {
         return (
           <li key={ch.id || i}>
-            <a href={ch.link} className={`${ch.link === path ? 'rhr-active' : ''}`}>
+            <a href={ch.link} className={`rhr-submenu-link ${ch.link === path ? 'rhr-active' : ''}`}>
               {ch.name}
             </a>
           </li>
