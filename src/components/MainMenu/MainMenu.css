@@ -22,7 +22,7 @@ nav a:hover, nav span:hover {
 nav a:link,
 nav a:visited,
 nav span {
-  color: rgb(239, 228, 247);
+  color: rgb(0 60 95);
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -50,14 +50,14 @@ nav ul li ul li {
   float: none;
   display: list-item;
   position: relative;
-  background-color: rgb(52, 1, 89);
+  background-color: rgb(217 217 217);
   padding-left: 24px;
 }
 
 .rhr-arrow {
   margin-left: 6px;
   margin-bottom: 3px;
-  border: solid rgb(239, 228, 247);
+  border: solid rgb(0 60 95);
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 3px;
@@ -77,6 +77,9 @@ nav ul li ul li {
   padding: 0 !important;
   line-height: 40px !important;
 }
+
+/* TABLETS */
+@media only screen and (min-width: 600px) {}
 
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
@@ -106,7 +109,6 @@ nav ul li ul li {
   }
 
   nav ul li ul li {
-    background-color: rgb(57, 25, 82);
     padding-left: 0;
   }
 

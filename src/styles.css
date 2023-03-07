@@ -1,7 +1,7 @@
 .rhr-header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(57, 25, 82);
+  background-color: rgb(217 217 217);
   height: 60px;
   width: 100%;
   font-family: "Roboto Light", serif;
@@ -9,6 +9,7 @@
 
 .rhr-overlap {
   position: absolute;
+  background-color: rgb(0, 0, 0, 0);
 }
 
 .rhr-menu-container {
@@ -16,7 +17,7 @@
   max-width: 350px;
   width: 350px;
   height: 100%;
-  background-color: rgb(52, 1, 89);
+  background-color: rgb(217 217 217);
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
   right: 0;

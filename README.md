@@ -61,7 +61,11 @@ function App() {
 }
 ```
 
-### Features
-- [x] Overlap props
-- [x] Active link highlight
-- [ ] Tablet size support
+### Contributing
+1. Clone repo.
+2. Create / checkout feature/{name}, or fix/{name} branch.
+3. Install deps: npm.
+4. Make your changes.
+5. Commit: git commit.
+6. Push: git push.
+7. Open PR targeting the main branch.
