@@ -1,9 +1,10 @@
 import React from "react";
+import './Home.css';
 
-export default (props) => {
+export const Home = ({home}) => {
   return (
     <div className="rhr-logo">
-      LOGO
+      {home}
     </div>
   );
 }

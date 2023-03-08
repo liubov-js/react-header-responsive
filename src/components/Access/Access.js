@@ -1,9 +1,9 @@
 import React from "react";
 
-export default (props) => {
+export const Access = ({access}) => {
   return (
     <div className="rhr-access">
-      Access
+      {access}
     </div>
   );
 }

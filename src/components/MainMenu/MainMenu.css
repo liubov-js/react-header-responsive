@@ -1,0 +1,137 @@
+nav {
+  height: 100%;
+  margin: 60px 40px 0;
+  max-width: 100%;
+}
+
+nav ul {
+  height: 20px;
+  list-style: none;
+  margin: 0;
+  display: block;
+  float: left;
+  padding:0;
+  position: relative;
+  width: 100%;
+}
+
+nav a:hover, nav span:hover {
+  background-color: inherit;
+}
+
+nav a:link,
+nav a:visited,
+nav span {
+  color: rgb(0 60 95);
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  line-height: normal;
+  text-align: left;
+  padding: 13px 0;
+}
+
+nav ul ul {
+  display: none;
+  position: inherit;
+  top: 100%;
+  margin-left: 24px;
+}
+
+nav ul li:hover > ul {
+  position: absolute;
+  top: 60px;
+  width: max-content;
+  display: contents;
+}
+
+nav ul li ul li {
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+  background-color: rgb(217 217 217);
+  padding-left: 24px;
+}
+
+.rhr-arrow {
+  margin-left: 6px;
+  margin-bottom: 3px;
+  border: solid rgb(0 60 95);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.rhr-caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rhr-active {
+  color: orange !important;
+}
+
+.rhr-submenu-link {
+  padding: 0 !important;
+  line-height: 40px !important;
+}
+
+/* TABLETS */
+@media only screen and (min-width: 600px) {}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+  nav {
+    margin: 0 0 0 15px;
+  }
+
+  nav a:hover, nav span:hover {
+    color: orange;
+  }
+
+  nav span:hover > i {
+    border: solid orange;
+    border-width: 0 1px 1px 0;
+  }
+
+  nav a:link,
+  nav a:visited,
+  nav span {
+    padding: 0 15px;
+    line-height: 60px;
+  }
+
+  nav ul li {
+    margin: auto;
+    display: inline-block;
+  }
+
+  nav ul li ul li {
+    padding-left: 0;
+  }
+
+  nav ul {
+    height: 100%;
+    display: -webkit-box; /*flex;*/
+  }
+
+  nav ul ul {
+    margin-left: 0;
+    position: inherit;
+  }
+
+  .rhr-main-access {
+    display: none;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+  .rhr-submenu-link {
+    padding: 0 15px !important;
+    line-height: 40px !important;
+  }
+}
