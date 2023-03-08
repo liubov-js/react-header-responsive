@@ -1,49 +1,57 @@
 # react-header-responsive
+A responsive header React component
 
-### Installing
+### Features
+- [x] Desktop version
+- [x] Mobile version
+- [x] Overlap props
+- [x] Active link highlight
+- [ ] Custom anchor component support
+
+### Installation
 ```
 npm install react-header-responsive
 ```
 
 ### Usage
-```ecmascript 6
+```js
 import Header from 'react-header-responsive';
 import logo from './rhr-logo.png';
 
 function App() {
   const exampleData = [
     {
-      name: "About company",
+      name: "About",
       link: "/about",
     },
     {
       name: "Products",
       children: [
         {
-          name: "CUCOMM Extension",
-          link: "/extension",
+          name: "Product-1",
+          link: "/product1",
         },
         {
-          name: "Appointment setting service",
-          link: "/appointment",
+          name: "Product-2",
+          link: "/product1",
         },
         {
-          name: "Facebook accounts",
-          link: "/fb-accounts",
+          name: "Product-3",
+          link: "/product1",
         }
       ]
     },
     {
-      name: "Contact us",
-      link: "/contact",
+      name: "Pricing",
+      link: "/pricing",
     },
   ]
 
   const AccessComponent = () => {
     return (
       <div style={{paddingTop: '20px'}}>
-        <button>Login</button>
-        <button>Buy</button>
+        <button>Sign Up</button>
+        <button>Sign In</button>
       </div>
     )
   }
@@ -53,7 +61,7 @@ function App() {
       <Header 
         pages={exampleData} 
         access={<AccessComponent />} 
-        home={<img src={logo} className="App-logo" alt="logo" />} 
+        home={<img src={logo} alt="RHR logo" />} 
         overlap
       />
     </div>
