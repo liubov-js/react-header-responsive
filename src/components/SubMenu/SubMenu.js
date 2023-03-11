@@ -1,7 +1,7 @@
-import React from "react";
-import {CustomLink} from "../CustomLink/CustomLink";
+import React from 'react';
+import CustomLink from '../CustomLink/CustomLink';
 
-export const SubMenu = ({pages, anchor, currentPath}) => {
+const SubMenu = ({ pages, anchor, currentPath }) => {
   return (
     <ul>
       {pages.map((ch, i) => {
@@ -9,12 +9,14 @@ export const SubMenu = ({pages, anchor, currentPath}) => {
           <li key={ch.id || i}>
             <CustomLink
               page={ch}
-              {...{anchor, currentPath}}
-              subClass='rhr-submenu-link'
+              {...{ anchor, currentPath }}
+              subClass="rhr-submenu-link"
             />
           </li>
-        )
+        );
       })}
     </ul>
   );
-}
+};
+
+export default SubMenu;
