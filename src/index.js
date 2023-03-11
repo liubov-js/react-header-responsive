@@ -5,7 +5,7 @@ import {Access} from "./components/Access/Access";
 import {MobileMenuToggle} from "./components/MobileMenuToggle/MobileMenuToggle";
 import './styles.css';
 
-const Header = ({pages, home, access, overlap}) => {
+const Header = ({pages, anchor, home, access, currentPath, overlap}) => {
   const [isToggled, setIsToggled] = useState(false);
 
   const toggleMenu = () => {
@@ -20,7 +20,7 @@ const Header = ({pages, home, access, overlap}) => {
       <div
         className={`rhr-menu-container ${!isToggled ? 'rhr-menu-container-mobile-transform' : ''}`}
       >
-        <MainMenu pages={pages} access={access} />
+        <MainMenu {...{pages, anchor, access, currentPath}} />
       </div>
       <div className="rhr-access-container">
         <Access access={access} />
