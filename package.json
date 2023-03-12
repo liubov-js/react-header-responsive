@@ -1,7 +1,7 @@
 {
   "name": "react-header-responsive",
-  "version": "1.0.0",
-  "description": "Responsive header for React apps",
+  "version": "1.1.0",
+  "description": "A responsive header for React apps",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",

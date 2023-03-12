@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MainMenu from './components/MainMenu/MainMenu';
 import Home from './components/Home/Home';
 import Access from './components/Access/Access';
@@ -11,6 +11,10 @@ const Header = ({ pages, anchor, home, access, currentPath, overlap }) => {
   const toggleMenu = () => {
     setIsToggled((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    setIsToggled(false);
+  }, [currentPath]);
 
   return (
     <header className={`rhr-header ${overlap ? 'rhr-overlap' : ''}`}>
