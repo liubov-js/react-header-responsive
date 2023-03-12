@@ -28,8 +28,11 @@
   transform: translate(100%, 0);
 }
 
+.rhr-logo {
+  max-height: 100%;
+}
+
 .rhr-access {
-  min-width: 170px;
   height: 100%;
 }
 

@@ -26,7 +26,7 @@ const Header = ({ pages, anchor, home, access, currentPath, overlap }) => {
           !isToggled ? 'rhr-menu-container-mobile-transform' : ''
         }`}
       >
-        <MainMenu {...{ pages, anchor, access, currentPath }} />
+        {pages && <MainMenu {...{ pages, anchor, access, currentPath }} />}
       </div>
       <div className="rhr-access-container">
         <Access access={access} />

@@ -78,7 +78,7 @@ function App() {
     },
   ];
 
-  const AccessComponent = () => {
+  const Access = () => {
     return (
       <div style={{ paddingTop: '20px' }}>
         <button>Sign Up</button>
@@ -97,7 +97,7 @@ function App() {
             {name}
           </Link>
         )}
-        access={<AccessComponent />}
+        access={<Access />}
         overlap
       />
     </>
