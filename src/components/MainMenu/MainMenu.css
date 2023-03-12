@@ -10,12 +10,13 @@ nav ul {
   margin: 0;
   display: block;
   float: left;
-  padding:0;
+  padding: 0;
   position: relative;
   width: 100%;
 }
 
-nav a:hover, nav span:hover {
+nav a:hover,
+nav span:hover {
   background-color: inherit;
 }
 
@@ -78,16 +79,14 @@ nav ul li ul li {
   line-height: 40px !important;
 }
 
-/* TABLETS */
-@media only screen and (min-width: 600px) {}
-
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
   nav {
     margin: 0 0 0 15px;
   }
 
-  nav a:hover, nav span:hover {
+  nav a:hover,
+  nav span:hover {
     color: orange;
   }
 

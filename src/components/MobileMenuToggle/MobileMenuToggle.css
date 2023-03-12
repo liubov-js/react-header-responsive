@@ -3,7 +3,9 @@
   cursor: pointer;
 }
 
-.rhr-bar-1, .rhr-bar-2, .rhr-bar-3 {
+.rhr-bar-1,
+.rhr-bar-2,
+.rhr-bar-3 {
   width: 30px;
   height: 3px;
   background-color: rgb(0 60 95);

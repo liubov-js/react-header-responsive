@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
-export const Access = ({access}) => {
-  return (
-    <div className="rhr-access">
-      {access}
-    </div>
-  );
-}
+const Access = ({ access }) => {
+  return <div className="rhr-access">{access}</div>;
+};
+
+export default Access;

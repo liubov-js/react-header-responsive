@@ -1,30 +1,27 @@
-import React from "react";
-import {SubMenu} from "../SubMenu/SubMenu";
+import React from 'react';
+import SubMenu from '../SubMenu/SubMenu';
+import CustomLink from '../CustomLink/CustomLink';
 import './MainMenu.css';
 
-export const MainMenu = ({pages, access}) => {
-  const path = window.location.pathname;
-
+const MainMenu = ({ pages, access, anchor, currentPath }) => {
   return (
     <nav>
-      <ul className='rhr-menu-box'>
+      <ul className="rhr-menu-box">
         {pages.map((el, i) => {
           if (!el.children) {
             return (
               <li key={el.id || i}>
-                <a href={el.link} className={`${el.link === path ? 'rhr-active' : ''}`}>
-                  {el.name}
-                </a>
+                <CustomLink page={el} {...{ anchor, currentPath }} />
               </li>
             );
           } else {
             return (
               <li key={el.id || i}>
-                <span className='rhr-caret'>
+                <span className="rhr-caret">
                   {el.name}
-                  <i className="rhr-arrow"/>
+                  <i className="rhr-arrow" />
                 </span>
-                <SubMenu pages={el.children}/>
+                <SubMenu pages={el.children} {...{ anchor, currentPath }} />
               </li>
             );
           }
@@ -33,4 +30,6 @@ export const MainMenu = ({pages, access}) => {
       </ul>
     </nav>
   );
-}
+};
+
+export default MainMenu;

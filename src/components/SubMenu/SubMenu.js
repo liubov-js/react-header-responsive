@@ -1,19 +1,22 @@
-import React from "react";
+import React from 'react';
+import CustomLink from '../CustomLink/CustomLink';
 
-export const SubMenu = ({pages}) => {
-  const path = window.location.pathname;
-
+const SubMenu = ({ pages, anchor, currentPath }) => {
   return (
     <ul>
       {pages.map((ch, i) => {
         return (
           <li key={ch.id || i}>
-            <a href={ch.link} className={`rhr-submenu-link ${ch.link === path ? 'rhr-active' : ''}`}>
-              {ch.name}
-            </a>
+            <CustomLink
+              page={ch}
+              {...{ anchor, currentPath }}
+              subClass="rhr-submenu-link"
+            />
           </li>
-        )
+        );
       })}
     </ul>
   );
-}
+};
+
+export default SubMenu;
