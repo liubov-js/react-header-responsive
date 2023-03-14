@@ -13,6 +13,13 @@
   transition: 0.4s;
 }
 
+.rhr-toggled {
+  position: fixed;
+  float: right;
+  right: 13px;
+  top: 13px;
+}
+
 .rhr-toggled .rhr-bar-1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 4px);
   transform: rotate(-45deg) translate(-6px, 4px);

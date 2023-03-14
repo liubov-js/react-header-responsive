@@ -80,7 +80,7 @@ function App() {
 
   const Access = () => {
     return (
-      <div style={{ paddingTop: '20px' }}>
+      <div>
         <button>Sign Up</button>
         <button>Sign In</button>
       </div>

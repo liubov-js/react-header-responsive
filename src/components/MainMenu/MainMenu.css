@@ -79,6 +79,11 @@ nav ul li ul li {
   line-height: 40px !important;
 }
 
+.rhr-main-access {
+  display: flex;
+  justify-content: center;
+}
+
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
   nav {
