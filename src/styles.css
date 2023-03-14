@@ -5,6 +5,7 @@
   height: 60px;
   width: 100%;
   font-family: 'Roboto Light', serif;
+  z-index: 10000;
 }
 
 .rhr-overlap {
