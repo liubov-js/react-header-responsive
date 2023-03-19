@@ -1,7 +1,9 @@
+@import 'variables';
+
 .rhr-header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(217 217 217);
+  background-color: $background-color;
   height: 60px;
   width: 100%;
   font-family: 'Roboto Light', serif;
@@ -14,11 +16,12 @@
 }
 
 .rhr-menu-container {
+  z-index: 10000;
   position: fixed;
   max-width: 350px;
   width: 350px;
   height: 100%;
-  background-color: rgb(217 217 217);
+  background-color: $background-color;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0 0;
   right: 0;
@@ -33,12 +36,15 @@
   max-height: 100%;
 }
 
-.rhr-access {
+.rhr-access,
+.rhr-home {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .rhr-mobile-menu {
-  z-index: 1;
+  z-index: 10000;
   margin: 13px;
 }
 
@@ -52,8 +58,8 @@
   }
 
   .rhr-menu-container {
+    z-index: 10000;
     position: relative;
-    background-color: rgb(57, 25, 82);
     max-width: 100%;
     display: block;
     width: 100%;

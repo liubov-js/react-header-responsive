@@ -1,7 +1,7 @@
 import React from 'react';
 import SubMenu from '../SubMenu/SubMenu';
 import CustomLink from '../CustomLink/CustomLink';
-import './MainMenu.css';
+import './MainMenu.scss';
 
 const MainMenu = ({ pages, access, anchor, currentPath }) => {
   return (
@@ -11,13 +11,17 @@ const MainMenu = ({ pages, access, anchor, currentPath }) => {
           if (!el.children) {
             return (
               <li key={el.id || i}>
-                <CustomLink page={el} {...{ anchor, currentPath }} />
+                <CustomLink
+                  page={el}
+                  {...{ anchor, currentPath }}
+                  subClass="rhr-main-menu-link"
+                />
               </li>
             );
           } else {
             return (
               <li key={el.id || i}>
-                <span className="rhr-caret">
+                <span className="rhr-caret rhr-main-menu-link">
                   {el.name}
                   <i className="rhr-arrow" />
                 </span>

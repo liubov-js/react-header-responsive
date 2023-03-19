@@ -3,7 +3,7 @@ import MainMenu from './components/MainMenu/MainMenu';
 import Home from './components/Home/Home';
 import Access from './components/Access/Access';
 import MobileMenuToggle from './components/MobileMenuToggle/MobileMenuToggle';
-import './styles.css';
+import './styles.scss';
 
 const Header = ({ pages, anchor, home, access, currentPath, overlap }) => {
   const [isToggled, setIsToggled] = useState(false);

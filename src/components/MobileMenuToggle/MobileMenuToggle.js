@@ -1,5 +1,5 @@
 import React from 'react';
-import './MobileMenuToggle.css';
+import './MobileMenuToggle.scss';
 
 const MobileMenuToggle = (props) => {
   return (
