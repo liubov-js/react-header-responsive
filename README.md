@@ -45,6 +45,8 @@ npm install react-header-responsive
 
 ### Example
 
+The use of react-header-responsive in a real project can be seen [here](https://cucomm.com/).
+
 ```js
 import Header from 'react-header-responsive';
 import logo from './rhr-logo.png';

@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .rhr-menu-toggle {
   display: inline-block;
   cursor: pointer;
@@ -8,7 +10,7 @@
 .rhr-bar-3 {
   width: 30px;
   height: 3px;
-  background-color: rgb(0 60 95);
+  background-color: $common-link-color;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -17,7 +19,6 @@
   position: fixed;
   float: right;
   right: 13px;
-  top: 13px;
 }
 
 .rhr-toggled .rhr-bar-1 {

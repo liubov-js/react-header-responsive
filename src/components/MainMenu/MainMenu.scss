@@ -1,3 +1,5 @@
+@import '../../variables';
+
 nav {
   height: 100%;
   margin: 60px 40px 0;
@@ -23,13 +25,10 @@ nav span:hover {
 nav a:link,
 nav a:visited,
 nav span {
-  color: rgb(0 60 95);
   text-decoration: none;
   display: block;
   font-size: 20px;
-  line-height: normal;
   text-align: left;
-  padding: 13px 0;
 }
 
 nav ul ul {
@@ -51,14 +50,14 @@ nav ul li ul li {
   float: none;
   display: list-item;
   position: relative;
-  background-color: rgb(217 217 217);
+  background-color: $background-color;
   padding-left: 24px;
 }
 
 .rhr-arrow {
   margin-left: 6px;
   margin-bottom: 3px;
-  border: solid rgb(0 60 95);
+  border: solid $common-link-color;
   border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 3px;
@@ -66,17 +65,28 @@ nav ul li ul li {
 }
 
 .rhr-caret {
+  color: $common-link-color;
   cursor: pointer;
   user-select: none;
+  line-height: $line-height-main-menu;
 }
 
-.rhr-active {
-  color: orange !important;
+.rhr-active-color {
+  color: $active-link-color;
 }
 
-.rhr-submenu-link {
-  padding: 0 !important;
-  line-height: 40px !important;
+.rhr-common-color {
+  color: $common-link-color;
+}
+
+.rhr-sub-menu-link {
+  padding: 0;
+  line-height: $line-height-sub-menu;
+}
+
+.rhr-main-menu-link {
+  line-height: $line-height-sub-menu;
+  padding: 0;
 }
 
 .rhr-main-access {
@@ -92,19 +102,12 @@ nav ul li ul li {
 
   nav a:hover,
   nav span:hover {
-    color: orange;
+    color: $active-link-color;
   }
 
   nav span:hover > i {
-    border: solid orange;
+    border: solid $active-link-color;
     border-width: 0 1px 1px 0;
-  }
-
-  nav a:link,
-  nav a:visited,
-  nav span {
-    padding: 0 15px;
-    line-height: 60px;
   }
 
   nav ul li {
@@ -134,8 +137,12 @@ nav ul li ul li {
     display: block;
   }
 
-  .rhr-submenu-link {
-    padding: 0 15px !important;
-    line-height: 40px !important;
+  .rhr-sub-menu-link {
+    padding: 0 15px;
+  }
+
+  .rhr-main-menu-link {
+    line-height: $line-height-main-menu;
+    padding: 0 15px;
   }
 }

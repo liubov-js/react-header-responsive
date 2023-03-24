@@ -10,7 +10,7 @@ const SubMenu = ({ pages, anchor, currentPath }) => {
             <CustomLink
               page={ch}
               {...{ anchor, currentPath }}
-              subClass="rhr-submenu-link"
+              subClass="rhr-sub-menu-link"
             />
           </li>
         );
